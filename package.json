@@ -1,0 +1,17 @@
+{
+  "name": "project-godeok-shooter",
+  "version": "1.0.0",
+  "description": "Project_Godeok — 영양소 검출 배틀로얄 (중2 과학 · 소화 단원)",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/smoke.mjs",
+    "load": "node test/load32.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "playwright": "^1.55.0",
+    "pngjs": "^7.0.0"
+  }
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project_Godeok 학습지 — 영양소 검출을 통한 음식물 찾기</title>
+<style>
+@page{size:A4;margin:14mm 13mm}
+*{box-sizing:border-box}
+body{margin:0;background:#e9ecef;color:#111;
+  font-family:"Pretendard","Noto Sans KR","Malgun Gothic","Apple SD Gothic Neo",sans-serif;font-size:11pt}
+.sheet{width:210mm;min-height:297mm;margin:14px auto;background:#fff;padding:14mm 13mm;
+  box-shadow:0 6px 26px rgba(0,0,0,.18)}
+.top{display:flex;justify-content:space-between;align-items:flex-end;
+  border-bottom:2.5px solid #111;padding-bottom:6px;margin-bottom:14px}
+.top .yr{font-size:10.5pt;color:#444}
+.top .id{font-size:10.5pt;letter-spacing:.5px}
+h1{font-size:13.5pt;margin:0 0 2px;line-height:1.35}
+.top>div:first-child{max-width:66%}
+.top .id{white-space:nowrap}
+h2{font-size:12.5pt;margin:18px 0 8px;padding-left:8px;border-left:5px solid #2d6cdf}
+h3{font-size:11pt;margin:12px 0 6px}
+p,li{line-height:1.75}
+ol.cond{margin:0;padding-left:20px}
+ol.cond li{margin-bottom:3px}
+table{width:100%;border-collapse:collapse;margin:8px 0 4px;font-size:10.5pt}
+th,td{border:1px solid #555;padding:7px 6px;text-align:center;vertical-align:middle}
+th{background:#f0f3f7;font-weight:700}
+td.tall{height:34px}
+td.tall2{height:52px}
+.small{font-size:9.5pt;color:#555;font-weight:400;display:block;margin-top:2px}
+.box{border:1.5px solid #333;border-radius:6px;padding:10px 12px;margin:8px 0;background:#fbfcfe}
+.tip{background:#fff8e1;border-color:#d9b64a}
+.drinks{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.drinks span{border:1px solid #666;border-radius:14px;padding:4px 12px;font-size:10.5pt}
+.write{border-bottom:1px solid #888;display:inline-block;min-width:100px}
+.ctrl{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;font-size:10.5pt;margin-top:4px}
+.ctrl div{border-bottom:1px dotted #bbb;padding:3px 0}
+.ctrl b{display:inline-block;min-width:118px;color:#2d6cdf}
+.no-print{text-align:center;margin:16px}
+.no-print button{padding:11px 22px;font-size:14px;border-radius:9px;border:1px solid #888;background:#fff;cursor:pointer}
+footer{margin-top:16px;border-top:1px solid #bbb;padding-top:6px;font-size:9pt;color:#777;display:flex;justify-content:space-between}
+@media print{body{background:#fff}.sheet{margin:0;box-shadow:none;width:auto;min-height:0;padding:0}.no-print{display:none}}
+</style>
+</head>
+<body>
+
+<div class="no-print"><button onclick="print()">🖨 인쇄하기 (A4 2장)</button></div>
+
+<!-- ===================== 1쪽 ===================== -->
+<div class="sheet">
+  <div class="top">
+    <div>
+      <div class="yr">2026년 고덕중학교 과학</div>
+      <h1>Ⅴ. 동물과 에너지 &nbsp;|&nbsp; 1. 소화 — 영양소 검출을 통한 음식물 찾기</h1>
+    </div>
+    <div class="id">2학년 (&nbsp;&nbsp;&nbsp;&nbsp;) 반 &nbsp; (&nbsp;&nbsp;&nbsp;&nbsp;) 모둠 &nbsp; 이름 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</div>
+  </div>
+
+  <h2>(0) Project_Godeok 접속하기</h2>
+  <div class="box">
+    <p style="margin:0 0 6px"><b>접속 주소</b> : http://<span class="write" style="min-width:170px"></span>
+      &nbsp;&nbsp;(선생님이 칠판에 적어 주십니다 · 반드시 <b>학교 와이파이</b>에 연결)</p>
+    <p style="margin:0 0 6px"><b>닉네임</b> : 자기 이름을 그대로 쓸 것 (친구들 머리 위에 뜹니다) &nbsp;/&nbsp;
+      <b>모둠</b> : 우리 모둠 번호를 선택</p>
+    <p style="margin:0"><b>접속하면 먼저 「대기 공간」</b> 입니다. 여기서 이동·점프·앉기·사격을 연습하세요
+      (탄약은 줄지 않습니다). <b>선생님이 시작을 누르면 5초 카운트다운 후 전원이 동시에</b>
+      우리 모둠 창고로 이동합니다.</p>
+  </div>
+
+  <h3>조작법</h3>
+  <div class="ctrl">
+    <div><b>이동 / 달리기</b> 화면 왼쪽 드래그 · 끝까지 밀면 달리기</div>
+    <div><b>시점 전환</b> 화면 오른쪽을 문질러서 돌리기</div>
+    <div><b>발사</b> 오른쪽 아래 큰 [발사] 버튼</div>
+    <div><b>점프</b> 최고 3m — 컨테이너 위로 올라갈 수 있음</div>
+    <div><b>앉기</b> 아주 느려짐(엄폐용) · 앉으면 못 뜀</div>
+    <div><b>탄알(시약) 교체</b> 화면 아래 탄창 칸을 터치</div>
+    <div><b>시약 획득</b> 시약 상자에 <u>가까이 가면 자동</u></div>
+    <div><b>실험노트 · 정답제출 · 🎓자격시험</b> 오른쪽 세로 버튼</div>
+    <div><b>모둠 대화</b> 💬 버튼 → 정해진 문장 보내기</div>
+  </div>
+
+  <h2>(1) 미지의 음료 (A), (B), (C)를 맞춰라!</h2>
+  <h3>&lt;조건 및 플레이 방법&gt;</h3>
+  <ol class="cond">
+    <li>앞선 시간에 배운 <b>시약을 통한 영양소 검출법</b>을 활용하여 미지의 음료 (A), (B), (C)의 이름을 맞추기</li>
+    <li>게임 월드 곳곳에 놓여 있는 <b>시약 상자</b>에 다가가면 시약을 얻을 수 있음! (한 번에 6발씩 · 종류별 최대 24발)</li>
+    <li>얻은 시약을 <b>탄알로 장전</b>하여, 거대한 비커에 담긴 미지의 음료에 <b>쏜다</b></li>
+    <li>그 시약과 반응하는 영양소가 들어 있으면 비커에서 <b>색깔 반응</b>이 나타남.
+        색 반응과 결과는 <b>우리 모둠에게만</b> 보이고, 비커 위에 「시약 → 결과」 표시판이 뜸</li>
+    <li>반응이 없으면 그 영양소는 <b>들어 있지 않다</b>는 뜻 — 이것도 중요한 정보!</li>
+    <li>네 가지 시약 결과를 모두 모아 (A), (B), (C)가 무엇인지 추리해서 <b>정답 제출</b>.
+        후보는 게임 안 실험노트에 <b>8종</b>이 뜨고, <u>라운드마다 새로 뽑힙니다</u> — 지난 판 답은 소용없어요.
+        틀리면 잠깐 대기가 걸리고, <b>계속 찍으면 대기가 점점 길어집니다</b></li>
+    <li><b>마취탄</b>으로 다른 모둠 친구를 3번 맞히면 그 친구는 <b>30초</b> 동안 움직일 수 없음. 같은 모둠끼리는 맞지 않음</li>
+    <li>★ <b>마취총은 처음에 잠겨 있다!</b> 게임 안 🎓 버튼을 눌러
+        <b>시약·영양소 4문제를 모두 맞혀야</b> 마취총이 해금됨.
+        아래 (2)번 표를 먼저 채우고 외워 둘 것 — <u>틀리면 어디가 틀렸는지 알려주지 않는다</u></li>
+    <li>★ <b>마취탄은 실험을 해야 생긴다!</b> 비커에 시약을 처음 맞힐 때마다 +3발.
+        같은 조합을 또 쏘면 0발. 보유 상한은 <b>우리 모둠이 맞힌 비커 수</b>에 따라
+        8 → 14 → 22 → 30발로 늘어남.
+        <u>검사를 한 번도 안 하고 마취탄만 6발 쏘면 45초 동안 총을 압수</u>당함</li>
+    <li>비커는 섬에 <b>두 세트</b>(제1·제2 실험장)가 있음. <b>같은 글자면 안에 든 음료도 같음</b> —
+        사람이 몰리면 반대쪽 실험장으로 갈 것</li>
+    <li>★ <b>정답은 「안전구역」 안에서만 제출할 수 있다.</b> 안전구역 = 처음 리스폰된 <b>모둠 창고 안</b>.
+        창고 안에서는 <u>마취탄에 맞지도 않고 쏘지도 못한다</u> — 안심하고 모둠끼리 상의할 것.
+        급하면 <b>다른 모둠 창고로 들어가도 제출은 된다</b>(단, 거기도 총은 못 쏨)</li>
+    <li>창고는 <b>들어갈 수 있고, 안쪽 계단으로 옥상까지</b> 올라갈 수 있음. 옥상에서는 멀리까지 보임</li>
+    <li>★ <b>베네딕트 용액은 「가열」해야 반응한다!</b> 필드 곳곳에 <b>🔥 가열대(불꽃)</b>가 있음.
+        불에 다가가면 <u>몸에 불이 붙고</u>, 그 상태에서 쏜 베네딕트만 반응함.
+        식은 뒤에 쏘면 <b>아무 일도 일어나지 않는다</b>(－로 기록되지도 않음).
+        불꽃 위치는 미니맵에 <b>주황색 삼각형</b>으로 표시됨</li>
+    <li>🎓 <b>자격시험은 게임이 시작된 뒤</b>에 볼 수 있음. 대기 공간에서는 못 봄 —
+        아래 (2)번 표를 <b>미리</b> 채워 두고 외울 것</li>
+    <li>🏁 ★ <b>순위는 「음료 3개를 먼저 다 맞힌 순서」</b>다. 점수가 아니다!
+        다 맞히는 순간 등수가 확정되고 전체에 발표됨. <b>3등이 나오면 라운드가 바로 끝난다.</b>
+        <u>이미 1·2등을 확정한 모둠도 계속 뛰어놀 수 있고, 마취탄에 맞는다</u></li>
+    <li>👑 <b>1위 모둠이 「무슨 색 모자」인지 계속 공개된다!</b> (예 : 「1위는 빨강 모자 — 홍길동 · 김서연」)
+        그 모둠원을 마취시키면 <b>+25점</b>(보통 마취는 +10점).
+        <u>즉 앞서갈수록 쫓긴다</u> — 1위가 되면 안전구역(창고)을 잘 쓸 것</li>
+  </ol>
+  <div class="box tip" style="margin-top:6px">
+    <b>우리 모둠 모자 색은?</b> &nbsp; 1모둠 빨강 · 2모둠 파랑 · 3모둠 초록 · 4모둠 노랑 ·
+    5모둠 보라 · 6모둠 민트 · 7모둠 분홍 · 8모둠 회색
+  </div>
+
+  <h2>(2) 먼저 정리하기 — 시약과 영양소 <span style="font-size:10pt;color:#c0392b">★ 이걸 못 외우면 마취총을 못 씁니다</span></h2>
+  <p style="margin:0 0 4px">빈칸을 채운 뒤 게임을 시작하세요.
+  게임 안 <b>🎓 자격시험 4문제</b>가 정확히 이 표에서 나옵니다.
+  (자격시험은 <b>게임이 시작된 뒤</b>에만 볼 수 있으니 지금 외워 두세요.)</p>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:26%">시약</th>
+        <th style="width:22%">검출하는 영양소</th>
+        <th style="width:26%">양성일 때 색 변화</th>
+        <th>비고</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>아이오딘–아이오딘화 칼륨 용액</td><td class="tall"></td><td class="tall"></td><td class="tall"></td></tr>
+      <tr><td>베네딕트 용액</td><td class="tall"></td><td class="tall"></td><td class="tall"><b>가열</b> 필요 — 게임에서도 🔥 불에<br>데운 뒤에 쏴야 반응한다</td></tr>
+      <tr><td>뷰렛 용액<span class="small">(5% NaOH + 1% CuSO₄)</span></td><td class="tall"></td><td class="tall"></td><td class="tall"></td></tr>
+      <tr><td>수단 Ⅲ 용액</td><td class="tall"></td><td class="tall"></td><td class="tall"></td></tr>
+    </tbody>
+  </table>
+
+  <h2>(3) 실험 기록표</h2>
+  <p style="margin:0 0 4px">반응이 나타나면 <b>＋</b>와 색깔을, 나타나지 않으면 <b>－</b>를 쓰세요.
+  게임 안 실험노트에도 자동으로 기록되지만, <b>여기에도 옮겨 적어야</b> 합니다.</p>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:14%">미지의 음료</th>
+        <th>아이오딘</th><th>베네딕트</th><th>뷰렛</th><th>수단 Ⅲ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><b>(A)</b></td><td class="tall2"></td><td class="tall2"></td><td class="tall2"></td><td class="tall2"></td></tr>
+      <tr><td><b>(B)</b></td><td class="tall2"></td><td class="tall2"></td><td class="tall2"></td><td class="tall2"></td></tr>
+      <tr><td><b>(C)</b></td><td class="tall2"></td><td class="tall2"></td><td class="tall2"></td><td class="tall2"></td></tr>
+    </tbody>
+  </table>
+
+  <footer><span>Project_Godeok — 영양소 검출 배틀로얄</span><span>1 / 2</span></footer>
+</div>
+
+<!-- ===================== 2쪽 ===================== -->
+<div class="sheet">
+  <div class="top">
+    <div><h1>Project_Godeok : 최종 결과</h1></div>
+    <div class="id">2학년 (&nbsp;&nbsp;&nbsp;&nbsp;) 반 &nbsp; 이름 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</div>
+  </div>
+
+  <h2>(4) 최종 결론</h2>
+  <p style="margin:0 0 4px"><b>후보는 게임 화면(실험노트)에 뜹니다 — 라운드마다 8종씩 새로 뽑힙니다.</b>
+    아래는 전체 목록이니, 이번 판 후보에 없는 것은 신경 쓰지 마세요.</p>
+  <div class="drinks">
+    <span>식용유</span><span>참기름</span><span>올리브유</span>
+    <span>물</span><span>제로 사이다</span><span>보리차</span><span>탄산수</span>
+    <span>난백(달걀 흰자)</span>
+    <span>우유</span><span>두유</span><span>달걀 노른자</span><span>생크림</span><span>두부 간 물</span>
+    <span>쌀뜨물</span><span>녹말물</span><span>감자 간 물</span>
+    <span>오렌지 주스</span><span>사이다</span><span>이온음료</span><span>꿀물</span>
+    <span>식혜</span><span>미숫가루 물</span><span>커피믹스</span><span>마시는 요구르트</span>
+  </div>
+
+  <table style="margin-top:10px">
+    <thead>
+      <tr><th style="width:16%">미지 음료</th><th style="width:34%">포함된 영양소</th><th style="width:26%">추측한 이름</th><th>그렇게 생각한 이유</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><b>(A)</b></td><td class="tall2"></td><td class="tall2"></td><td class="tall2"></td></tr>
+      <tr><td><b>(B)</b></td><td class="tall2"></td><td class="tall2"></td><td class="tall2"></td></tr>
+      <tr><td><b>(C)</b></td><td class="tall2"></td><td class="tall2"></td><td class="tall2"></td></tr>
+    </tbody>
+  </table>
+
+  <h2>(5) 생각해 보기</h2>
+  <div class="box">
+    <p style="margin:0 0 4px"><b>①</b> 네 가지 시약에 <u>모두 반응하지 않는</u> 음료가 있었다면, 그것은 무엇이었을까요?
+      그렇게 판단할 수 있는 근거를 쓰세요. 또, 이 방법만으로는 <b>구별할 수 없는</b> 음료 두 가지를 찾아 쓰세요.</p>
+    <div style="height:52px;border-bottom:1px dotted #999"></div>
+    <div style="height:26px;border-bottom:1px dotted #999"></div>
+  </div>
+  <div class="box">
+    <p style="margin:0 0 4px"><b>②</b> 한 음료에서 <u>두 가지 이상</u>의 시약 반응이 나타난 경우가 있었나요?
+      어느 음료에서 어떤 반응이 함께 나타났는지 쓰고, 한 가지 음식에 여러 영양소가 들어 있다는 것이
+      우리 몸의 소화 과정에서 어떤 의미가 있을지 써 보세요.</p>
+    <div style="height:52px;border-bottom:1px dotted #999"></div>
+    <div style="height:26px;border-bottom:1px dotted #999"></div>
+  </div>
+  <div class="box">
+    <p style="margin:0 0 4px"><b>③</b> 이 게임에서 <b>베네딕트</b>만은 🔥 불에 몸을 데운 뒤에 쏴야 반응했습니다.
+      다른 세 시약은 그냥 쏴도 반응했고요. <u>왜 베네딕트만 가열이 필요할까요?</u>
+      실제 실험실에서는 무엇으로 어떻게 가열하는지도 함께 쓰세요.
+      또, 설탕(자당)물에 베네딕트 용액을 넣고 가열하면 어떻게 될지 예상해 보세요.</p>
+    <div style="height:52px;border-bottom:1px dotted #999"></div>
+    <div style="height:26px;border-bottom:1px dotted #999"></div>
+  </div>
+  <div class="box tip">
+    <p style="margin:0"><b>④ 우리 모둠 작전 회의</b> — 시약은 섬 곳곳에 흩어져 있고, 마취탄을 맞으면 60초를 잃습니다.
+      <b>마취탄은 비커를 검사해야만 채워집니다.</b>
+      네 명이 어떻게 <b>역할을 나누면</b> 가장 빨리 세 비커(A·B·C)를 다 검사할 수 있을지,
+      두 실험장을 어떻게 나눠 쓸지 적어 보세요.</p>
+    <div style="height:46px;border-bottom:1px dotted #999;margin-top:4px"></div>
+    <div style="height:26px;border-bottom:1px dotted #999"></div>
+  </div>
+
+  <h2>(6) 우리 모둠 기록</h2>
+  <table>
+    <tr>
+      <th style="width:25%">최종 점수</th><td class="tall"></td>
+      <th style="width:25%">맞힌 비커 수</th><td class="tall">&nbsp; / 3</td>
+    </tr>
+    <tr>
+      <th>자격시험 시도 횟수</th><td class="tall"></td>
+      <th>마취시킨 / 당한 횟수</th><td class="tall"></td>
+    </tr>
+    <tr>
+      <th>🏁 우리 모둠 등수</th><td class="tall">(&nbsp;&nbsp;&nbsp;)등 · 완주 (&nbsp;&nbsp;)분 (&nbsp;&nbsp;)초</td>
+      <th>1위 모둠을 마취시킨 횟수</th><td class="tall"></td>
+    </tr>
+  </table>
+
+  <footer><span>Project_Godeok — 영양소 검출 배틀로얄</span><span>2 / 2</span></footer>
+</div>
+
+</body>
+</html>
